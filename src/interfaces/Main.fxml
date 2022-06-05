@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="410.0" prefWidth="657.0" styleClass="parent" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <Pane layoutX="65.0" layoutY="62.0" prefHeight="340.0" prefWidth="632.0" styleClass="pane" stylesheets="@../application/application.css" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <Label layoutX="396.0" layoutY="80.0" text="Estoy Registrado" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_seconnecter" layoutX="430.0" layoutY="170.0" mnemonicParsing="false" onAction="#openSignIn" styleClass="trans-btn-white-border" stylesheets="@../application/application.css" text="INGRESAR" textFill="WHITE" />
+            <Button fx:id="btn_sinscrire" layoutX="109.0" layoutY="170.0" mnemonicParsing="false" onAction="#openSignUp" prefHeight="27.0" prefWidth="88.0" styleClass="trans-btn-white-border" text="REGISTRAR" textFill="WHITE" />
+            <Label layoutX="55.0" layoutY="80.0" prefHeight="28.0" prefWidth="219.0" text="No Estoy Registrado" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <VBox fx:id="VBox" layoutX="28.0" layoutY="-23.0" prefHeight="386.0" prefWidth="281.0" styleClass="white-pane" stylesheets="@../application/application.css" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="429.0" prefWidth="699.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FacturaController">
+   <children>
+      <JFXTextField fx:id="txt_adr" layoutX="22.0" layoutY="95.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="#7294ac" />
+      <JFXComboBox fx:id="cb_logement" layoutX="22.0" layoutY="25.0" prefHeight="25.0" prefWidth="135.0" promptText="Hospital" unFocusColor="#7294ac" />
+      <ImageView fx:id="imageLog" fitHeight="295.0" fitWidth="334.0" layoutX="346.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="22.0" layoutY="78.0" text="Nombre" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="78.0" text="Departamento" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_region" layoutX="180.0" layoutY="95.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_type" layoutX="180.0" layoutY="157.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="#7294ac" />
+      <Label layoutX="180.0" layoutY="140.0" text="Tipo" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="140.0" text="Doctor" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_locataire" layoutX="22.0" layoutY="157.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_NAP" layoutX="22.0" layoutY="286.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="#7294ac" />
+      <Label layoutX="22.0" layoutY="269.0" text="Monto a Pagar" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_forfaitaire" layoutX="180.0" layoutY="224.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="#7294ac" />
+      <Label layoutX="180.0" layoutY="207.0" text="Total" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="207.0" text="Servicio" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_loyer" layoutX="22.0" layoutY="224.0" prefHeight="25.0" prefWidth="135.0" unFocusColor="#7294ac" />
+      <JFXButton layoutX="126.0" layoutY="334.0" onAction="#imprimer" styleClass="pink-btn" text="Imprimer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="cb_locataire" layoutX="180.0" layoutY="27.0" onMouseClicked="#remplirLocataire" prefHeight="25.0" prefWidth="135.0" promptText="Doctor" unFocusColor="#7294ac" />
+      <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="326.0" layoutY="27.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Lupa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="87.0" layoutY="329.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Imprimir.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

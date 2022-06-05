@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="429.0" prefWidth="699.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HistorialController">
+   <children>
+      <Label layoutX="25.0" layoutY="33.0" text="Hosital">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_logement" layoutX="153.0" layoutY="36.0" promptText="Identificación" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_adr" layoutX="122.0" layoutY="76.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" AnchorPane.leftAnchor="122.0" />
+      <JFXTextField fx:id="txt_loyer" layoutX="122.0" layoutY="114.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" AnchorPane.leftAnchor="122.0" />
+      <JFXTextField fx:id="txt_region" layoutX="122.0" layoutY="188.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" AnchorPane.leftAnchor="122.0" />
+      <JFXTextField fx:id="txt_type" layoutX="122.0" layoutY="150.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" AnchorPane.leftAnchor="122.0" />
+      <Label layoutX="38.0" layoutY="79.0" text="Nombre" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="117.0" text="Servicio" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="153.0" text="Tipo" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="191.0" text="Departamento" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="307.0" text="CC" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="271.0" text="Teléfono" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="233.0" text="Nombre" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_cin" layoutX="122.0" layoutY="304.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_telephone" layoutX="122.0" layoutY="268.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_nomprenom" layoutX="122.0" layoutY="230.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_debut" layoutX="123.0" layoutY="342.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_fin" layoutX="123.0" layoutY="378.0" prefHeight="25.0" prefWidth="247.0" unFocusColor="#7294ac" />
+      <Label layoutX="25.0" layoutY="345.0" text="Fecha Inicio" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="381.0" text="Fecha Fin" textFill="#1d6ea4">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="389.0" layoutY="39.0" onMouseClicked="#tableEvent" prefHeight="368.0" prefWidth="294.0" styleClass="table-vieww">
+        <columns>
+          <TableColumn fx:id="cin_logement" prefWidth="75.0" text="Hospital" />
+          <TableColumn fx:id="cin_locataire" prefWidth="75.0" text="Doctor" />
+            <TableColumn fx:id="cin_debut" prefWidth="75.0" text="Fecha Inicio" />
+            <TableColumn fx:id="cin_fin" prefWidth="75.0" text="Fecha Fin" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="298.0" layoutY="30.0" onMouseClicked="#searchLogement" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Lupa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

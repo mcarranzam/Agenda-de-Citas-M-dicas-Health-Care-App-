@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <AnchorPane layoutX="44.0" layoutY="27.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2D3447;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="6.0" prefHeight="71.0" prefWidth="200.0" style="-fx-background-color: #2D3447;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator layoutY="56.0" prefHeight="37.0" prefWidth="900.0" />
+                  <ImageView fitHeight="71.0" fitWidth="80.0" layoutX="60.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="74.0" layoutY="86.0" onMouseClicked="#accueil" prefHeight="37.0" prefWidth="160.0" text="Inicio" textFill="WHITESMOKE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0" />
+            <JFXButton alignment="BASELINE_LEFT" layoutX="21.0" layoutY="149.0" onMouseClicked="#logement" prefHeight="37.0" prefWidth="160.0" text="Hospitales" textFill="WHITESMOKE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="150.0" />
+            <JFXButton alignment="BASELINE_LEFT" layoutX="31.0" layoutY="159.0" onMouseClicked="#locataire" prefHeight="37.0" prefWidth="160.0" text="Doctores" textFill="WHITESMOKE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="200.0" />
+            <JFXButton alignment="BASELINE_LEFT" layoutX="41.0" layoutY="169.0" onMouseClicked="#location" prefHeight="37.0" prefWidth="160.0" text="Agenda" textFill="WHITESMOKE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="250.0" />
+            <JFXButton alignment="BASELINE_LEFT" layoutX="51.0" layoutY="179.0" onMouseClicked="#contrat" prefHeight="37.0" prefWidth="160.0" text="Contrato" textFill="WHITESMOKE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="300.0" />
+            <JFXButton alignment="BASELINE_LEFT" layoutX="61.0" layoutY="189.0" onMouseClicked="#facture" prefHeight="37.0" prefWidth="160.0" text="Factura" textFill="WHITESMOKE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="350.0" />
+            <JFXButton alignment="BASELINE_LEFT" layoutX="40.0" layoutY="387.0" onMouseClicked="#historiques" prefHeight="37.0" prefWidth="98.0" text="Historial" textFill="WHITESMOKE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="400.0" />
+            <JFXButton alignment="BASELINE_LEFT" layoutX="50.0" layoutY="397.0" onMouseClicked="#credits" prefHeight="37.0" prefWidth="98.0" text="Creditos" textFill="WHITESMOKE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="450.0" />
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="30.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Inicio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="30.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Contrato.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="30.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Factura.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="30.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Historial.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="30.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Creditos.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="30.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Hospital.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="30.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Doctor.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="30.0" layoutX="30.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Ubicación.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="201.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="71.0" />
+      <Pane layoutX="200.0" layoutY="-46.0" prefHeight="71.0" prefWidth="700.0" style="-fx-background-color: #2D3447;" AnchorPane.bottomAnchor="426.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="imageUser" fitHeight="53.0" fitWidth="70.0" layoutX="603.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lab_username" layoutX="464.0" layoutY="27.0" text="Nombre Usuario" textFill="WHITE" />
+            <Label layoutX="185.0" layoutY="18.0" text=" APP" textFill="#30d721">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="18.0" text="HEALTH " textFill="#30d721">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="18.0" text=" CARE" textFill="#22c1d6">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
