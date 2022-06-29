@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="429.0" prefWidth="699.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HospitalController">
+   <children>
+      <Label layoutX="23.0" layoutY="48.0" text="Buscar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_searchId" layoutX="151.0" layoutY="51.0" promptText="Identificación" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_adr" layoutX="14.0" layoutY="101.0" prefHeight="25.0" prefWidth="293.0" promptText="Nombre" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_superficie" layoutX="335.0" layoutY="101.0" prefHeight="25.0" prefWidth="135.0" promptText="Superficie" unFocusColor="#7294ac" />
+      <JFXComboBox fx:id="cb_region" layoutX="14.0" layoutY="156.0" prefHeight="25.0" prefWidth="135.0" promptText="Departamento" unFocusColor="#7294ac" />
+      <JFXComboBox fx:id="cb_province" layoutX="174.0" layoutY="156.0" onMouseClicked="#remplirProvince" prefHeight="25.0" prefWidth="135.0" promptText="Ciudad" unFocusColor="#7294ac" />
+      <JFXComboBox fx:id="cb_commune" layoutX="335.0" layoutY="156.0" onMouseClicked="#remplirCommune" prefHeight="25.0" prefWidth="135.0" promptText="Barrio" unFocusColor="#7294ac" />
+      <JFXComboBox fx:id="cb_type" layoutX="14.0" layoutY="202.0" prefHeight="25.0" prefWidth="135.0" promptText="Tipo" unFocusColor="#7294ac" />
+      <Label fx:id="lab_url" layoutX="389.0" layoutY="215.0" text="Selección" textFill="#7294ac">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table_logement" layoutX="15.0" layoutY="243.0" onMouseClicked="#tableLogEvent" prefHeight="136.0" prefWidth="672.0" styleClass="table-vieww" stylesheets="@../application/application.css">
+        <columns>
+          <TableColumn fx:id="cin_id" prefWidth="100.0" text="ID" />
+          <TableColumn fx:id="cin_adr" prefWidth="112.0" text="Dirección" />
+            <TableColumn fx:id="cin_superficie" minWidth="0.0" prefWidth="113.0" text="Superficie" />
+            <TableColumn fx:id="cin_loyer" minWidth="0.0" prefWidth="123.0" text="Servicio" />
+            <TableColumn fx:id="cin_type" prefWidth="117.0" text="Tipo" />
+            <TableColumn fx:id="cin_region" minWidth="0.0" prefWidth="106.0" text="Departamento" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="image_logement" fitHeight="150.0" fitWidth="183.0" layoutX="502.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="btn_edit" layoutX="324.0" layoutY="390.0" onMouseClicked="#modifierLogement" styleClass="buttons" text="Modificar" />
+      <JFXButton fx:id="btn_delete" layoutX="409.0" layoutY="390.0" onMouseClicked="#supprimerLogement" styleClass="buttons" text="Suprimir" />
+      <JFXButton fx:id="btn_add" layoutX="251.0" layoutY="390.0" onMouseClicked="#ajouerLogement" styleClass="buttons" text="Agregar" />
+      <JFXTextField fx:id="txt_loyer" layoutX="175.0" layoutY="203.0" prefHeight="25.0" prefWidth="135.0" promptText="Servicio" unFocusColor="#7294ac" />
+      <ImageView fx:id="icon_importer" fitHeight="30.0" fitWidth="36.0" layoutX="350.0" layoutY="209.0" onMouseClicked="#importerImage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Adjuntar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="303.0" layoutY="52.0" onMouseClicked="#searchLogement" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Lupa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="429.0" prefWidth="699.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreditsController">
+   <children>
+      <ImageView fitHeight="386.0" fitWidth="333.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LogoUnal.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="334.0" layoutY="1.0" prefHeight="490.0" prefWidth="368.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <Label layoutX="190.0" layoutY="92.0" text=" CARE" textFill="#22c1d6">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="98.0" layoutY="92.0" text="HEALTH " textFill="#30d721">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="92.0" layoutX="158.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="257.0" layoutY="92.0" text=" APP" textFill="#30d721">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="161.0" prefHeight="23.0" prefWidth="351.0" text="ESTRUCTURAS DE DATOS" textFill="WHITE" AnchorPane.bottomAnchor="306.0">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="208.0" prefHeight="23.0" prefWidth="351.0" text="Profesor:" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="231.0" prefHeight="23.0" prefWidth="351.0" text="David Alberto Herrera Alvarez" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="306.0" prefHeight="23.0" prefWidth="351.0" text="Felipe Rojas Arredondo" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="283.0" prefHeight="23.0" prefWidth="351.0" text="Realizado por:" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="329.0" prefHeight="23.0" prefWidth="351.0" text="Miguel Ángel Parrado García" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutY="-1.0" prefHeight="3.0" prefWidth="368.0" />
+            <Label alignment="CENTER" disable="true" layoutX="27.0" layoutY="119.0" prefHeight="23.0" prefWidth="351.0" text="Proyecto sin Nombre XD" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="376.0" prefHeight="23.0" prefWidth="351.0" text="Juan Sebastián Rodríguez" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="353.0" prefHeight="23.0" prefWidth="351.0" text="Jesús Ernersto Quiñones Cely" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="398.0" prefHeight="23.0" prefWidth="351.0" text="Manuel Felipe Carranza Montenegro" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

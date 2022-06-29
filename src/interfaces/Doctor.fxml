@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="429.0" prefWidth="699.0" styleClass="backgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DoctorController">
+   <children>
+      <Label layoutX="23.0" layoutY="48.0" text="Buscar">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_searchCIN" layoutX="151.0" layoutY="51.0" promptText="CC" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_nom" layoutX="14.0" layoutY="101.0" prefHeight="25.0" prefWidth="272.0" promptText="Nombres y Apellidos" unFocusColor="#7294ac" />
+      <TableView fx:id="table_locataire" layoutX="303.0" layoutY="96.0" onMouseClicked="#tableLocataireEvent" prefHeight="279.0" prefWidth="382.0" styleClass="table-vieww" stylesheets="@../application/application.css">
+        <columns>
+          <TableColumn fx:id="cin_id" prefWidth="41.0" text="ID" />
+          <TableColumn fx:id="cin_nom" prefWidth="93.0" text="Nombre" />
+            <TableColumn fx:id="cin_cin" minWidth="0.0" prefWidth="51.0" text="CC" />
+            <TableColumn fx:id="cin_date" minWidth="0.0" prefWidth="118.0" text="Fecha Nacimiento" />
+            <TableColumn fx:id="cin_tele" prefWidth="77.0" text="Teléfono" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btn_edit" layoutX="113.0" layoutY="308.0" onMouseClicked="#editLocataire" styleClass="buttons" text="Modificar" />
+      <JFXButton fx:id="btn_delete" layoutX="198.0" layoutY="308.0" onMouseClicked="#deleteLocataire" styleClass="buttons" text="Suprimir" />
+      <JFXButton fx:id="btn_add" layoutX="34.0" layoutY="308.0" onMouseClicked="#addLocataire" styleClass="buttons" text="Agregar" />
+      <JFXTextField fx:id="txt_CIN" layoutX="14.0" layoutY="139.0" prefHeight="25.0" prefWidth="272.0" promptText="CC" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_tele" layoutX="14.0" layoutY="223.0" prefHeight="25.0" prefWidth="272.0" promptText="Número de Teléfono" unFocusColor="#7294ac" />
+      <DatePicker fx:id="datePicker" layoutX="15.0" layoutY="190.0" prefHeight="25.0" prefWidth="272.0" promptText="Fecha de Nacimiento" />
+      <ImageView fitHeight="30.0" fitWidth="36.0" layoutX="297.0" layoutY="49.0" onMouseClicked="#searchLocataire" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Lupa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
